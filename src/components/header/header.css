@@ -1,0 +1,208 @@
+.header {
+    height: 250px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+/* ===== Header Top ===== */
+
+.header_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.header__top-menu {
+    display: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.header__top-phone,
+.header__top-text,
+.header__top-link {
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.header__top-phone i,
+.header__top-link i {
+    margin: 5px;
+}
+
+/* ===== Header Middle ===== */
+ .header_middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 50%;
+ }
+
+ .header__middle-logo {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+ }
+
+ .header__middle-logo i {
+    margin: 0 6px;
+    font-size: 40px;
+ }
+ .header__middle-searchbox {
+    width: 700px;
+    background-color: #ffffff;
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+ }
+ .header__middle-search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 25px;
+    font-size: 24px;
+ }
+ .header__middle-searchbox i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    font-size: 40px;
+    color: #808080;
+ }
+ .header__middle-cart-wrapper {
+    position: relative;
+ }
+ .cart_notification {
+    position: absolute;
+    top: -7px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+ }
+.header__middle-cart-wrapper i {
+    font-size: 44px;
+    color: #ffffff;
+    cursor: pointer;
+ }
+
+ /* ====== Navbar Section ===== */
+ .navbar {
+    background-color: var(--main-color);
+    box-shadow: 0 0 1px 1px #808080;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .navbar_links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+ }
+ .navbar_link {
+    padding: 0 20px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #525452;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .navbar_link:hover {
+    background-color: #fffaff;
+ }
+
+ /* ===== Media Queries ===== */
+ @media only screen and (max-width: 990px) {
+    .header__middle-searchbox {
+        width: 600px;
+    }
+ }
+ @media only screen and (max-width: 920px) {
+    .header__middle-searchbox {
+        width: 450px;
+    }
+    .header__top-text {
+        font-size: 17px;
+    }
+    .header__middle-logo {
+        font-size: 17px;
+        font-weight: 400;
+    }
+ }
+ @media only screen and (max-width: 720px) {
+    .header__top-text {
+        display: none;
+    }
+    .header__top-menu {
+        display: block;
+    }
+    .header__middle-searchbox {
+        height: 50px;
+        width: 100%;
+    }
+    .header_middle {
+        flex-wrap: wrap;
+        padding: 0 30px;
+        height: 80%;
+    }
+    .header__middle-logo {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+        top: 50px;
+        left: -300px;
+        width: 250px;
+        height: 100vh;
+        align-items: flex-start;
+        z-index: 999;
+        transition: all 1s ease;
+    }
+    .navbar_links {
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        height: max-content;
+        width: 100%;
+    }
+    .navbar_link {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 30px;
+    }
+ }
+ @media only screen and (max-width: 520px) {
+    .header {
+        height: 200px;
+    }
+    .header_top,
+    .header_middle {
+        padding: 0 15px;
+    }
+    .header__top-phone {
+        font-size: 20px;
+    }
+ }

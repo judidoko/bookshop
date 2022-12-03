@@ -1,0 +1,78 @@
+.book__slider-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    padding: 10px 20px 20px 20px;
+}
+.book__slider-arrow-left,
+.book__slider-arrow-right {
+    width: 50px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    background-color: #222;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 32px;
+
+}
+.book__slider-arrow-left {
+    left: 10px;
+}
+.book__slider-arrow-right {
+    right: 10px;
+}
+.book__slide-wrapper {
+    height: 100%;
+    display: flex;
+    transition: all .5s ease;
+}
+.book__slide-item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #fffafa;
+    margin: 0 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.book__slide-item-img {
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+}
+.book__slide-item-title {
+    font-size: 18px;
+}
+.book__slide-item-price {
+    color: #dc143c;
+    font-weight: bold;
+    font-size: 20px;
+}
+.book__slide-icons {
+    border-top: 1px solid #808080;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+.book__slide-icons i {
+    font-size: 27px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: rgb(67, 67, 67);
+}

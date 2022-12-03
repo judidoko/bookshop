@@ -1,0 +1,115 @@
+.footer {
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+}
+.footer__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.footer__social-media-text {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer__social-media-icons {
+    display: flex;
+    align-items: center;
+}
+.footer__social-media-icon {
+    margin: 0 15px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.footer__social-media-icon i {
+    font-size: 25px;
+}
+
+/* Footer Links */
+.footer__links-wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer__links-item {
+    width: 30%;
+}
+.footer__links-item-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid #fff;
+    width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.footer_links {
+    padding: 5px;
+}
+.footer_link {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer__address-item {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: var(--main-color);
+}
+.footer__address-item i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+.footer_description {
+    font-size: 17px;
+    color: var(--main-color);
+}
+
+/* Media Quries */
+@media only screen and (max-width: 820px) {
+    .footer__social-media-icon {
+        margin-right: 7px;
+    }
+    .footer__links-wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer__links-item {
+        width: 40%;
+    }
+    .footer__links-item:last-of-type {
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .footer__social-media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__social-media-icon {
+        margin: 15px 15px 0 0;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .footer {
+        padding: 15px;
+    }
+    .footer__links-item {
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+}

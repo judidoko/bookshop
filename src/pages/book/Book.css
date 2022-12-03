@@ -1,0 +1,115 @@
+.book {
+    padding: 30px;
+}
+.book_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.book__content-img {
+    width: 30%;
+    height: 300px;
+    object-fit: contain;
+    padding: 20px;
+    box-shadow: 0 0 1px 2px #fffafa;
+    border-radius: 7px;
+    background-color: #fffafa;
+    margin-right: 20px;
+}
+.book__content-info {
+    width: 60%;
+}
+.book_title {
+    font-size: 32px;
+}  
+.book_author {
+    color: #808080;
+    font-size: 21px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.book_author span {
+    color: #008080
+}
+.book__add-to-cart {
+    margin: 30px 0;
+}
+.book__add-to-cart-input {
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+.book__add-to-cart-btn {
+    border: 1px solid #008000;
+    border-radius: 7px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #008000;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.book__add-to-cart-btn:hover {
+    background-color: #7fffd4;
+}
+.book_descrition {
+    width: 80%;
+    font-size: 21px;
+    line-height: 1.8;
+}
+.book_icons {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+.book_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+    font-size: 21px;
+    color: #008080;
+}
+.book_icon small {
+    font-weight: 600;
+}
+.book_icon i {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 720px) {
+    .book {
+        padding: 30px 15px;
+    }
+    .book_descrition {
+        width: 100%;
+    }
+    .book__add-to-cart-input {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .book_content {
+        flex-direction: column;
+    }
+    .book__content-img {
+        width: 100%;
+    }
+    .book__content-info {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .book_icons {
+        flex-direction: column;
+    }
+    .book_icon {
+        margin-right: 0;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+}

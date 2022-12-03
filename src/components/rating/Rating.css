@@ -1,0 +1,18 @@
+.rating {
+    color: rgb(254, 174, 17);
+}
+.rating i {
+    margin: 0 3px;
+    font-size: 20px;
+
+}
+.rating span:first-of-type {
+    font-weight: 500;
+    margin: 0 7px;
+    color: #808080;
+}
+.rating span:last-of-type {
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+}
