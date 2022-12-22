@@ -16,7 +16,7 @@ const Register = () => {
 
     if (email.trim() === "") return toast.error("Email is required");
     if (username.trim() === "") return toast.error("Username is required");
-    if (password.trim() === "") return toast.error("Passwird is required");
+    if (password.trim() === "") return toast.error("Password is required");
   };
 
   // Show Password Handler
@@ -30,16 +30,16 @@ const Register = () => {
         <h1 className="form_title">Create your account</h1>
         <form onSubmit={formSubmitHandler} className="form" action="#">
           <input
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            value={email}
-            placeholder="Email"
+            onChange={(e) => setUsername(e.target.value)}
+            type="text"
+            value={username}
+            placeholder="Username"
           />
           <input
             onChange={(e) => setEmail(e.target.value)}
-            type="text"
-            value={username}
-            placeholder="username"
+            type="email"
+            value={email}
+            placeholder="email"
           />
           <input
             onChange={(e) => setPassword(e.target.value)}
