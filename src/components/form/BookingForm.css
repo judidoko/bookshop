@@ -1,0 +1,74 @@
+form {
+  margin-top: 20px;
+}
+.flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex {
+  width: 47.8%;
+  margin-right: 10px;
+}
+.booking_form {
+  color: #7c8a97;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.booking_form input {
+  padding: 10px 15px;
+  border: 1px solid #7c8a972a;
+  color: #7c8a97;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.booking_form select {
+  width: 100%;
+  padding: 10px 15px;
+  color: #7c8a97;
+  border: 1px solid #7c8a972a;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.time_picker::before {
+  content: "Time:";
+  color: #7c8a97;
+  margin-right: 0.6rem;
+  font-size: 0.8rem;
+}
+.date_picker::before {
+  content: "Date:";
+  color: #7c8a97;
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.booking_form input:focus,
+.booking_form select:focus {
+  outline: none;
+}
+.payment {
+  margin-bottom: 20px;
+}
+.payment label {
+  font-weight: 400;
+  color: #000d6b;
+}
+.payment button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #000d6b;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+@media only screen and(max-width: 768px) {
+  .booking_form {
+    width: 100%;
+  }
+  .booking_form input {
+    font-size: 0.8rem;
+  }
+}

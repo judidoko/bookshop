@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import CartContext from "../../context/cartContext";
+import BookingForm from "../../components/form/BookingForm";
 
 const Cart = () => {
   const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
@@ -91,6 +92,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
+        <BookingForm />
       </div>
     </>
   );

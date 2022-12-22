@@ -32,7 +32,6 @@ const Footer = () => {
             <h3 className="footer__links-item-title">Usefull Links</h3>
             <ul className="footer_links">
               <li className="footer_link">Home</li>
-              <li className="footer_link">Authors</li>
               <li className="footer_link">About Us</li>
               <li className="footer_link">Contact Us</li>
               <li className="footer_link">Register</li>
